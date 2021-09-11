@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Financial Analytics</string>
+
+    <string name="rupee">\u20B9</string>
+</resources>

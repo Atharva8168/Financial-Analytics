@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1787037037037037" />
+        <entry key="app/src/main/res/drawable/amount_selector.xml" value="0.32916666666666666" />
+        <entry key="app/src/main/res/drawable/close_bg.xml" value="0.32916666666666666" />
+        <entry key="app/src/main/res/drawable/description_selector.xml" value="0.32916666666666666" />
+        <entry key="app/src/main/res/drawable/ic_add.xml" value="0.32916666666666666" />
+        <entry key="app/src/main/res/drawable/ic_description_focused.xml" value="0.32916666666666666" />
+        <entry key="app/src/main/res/drawable/ic_label_focused.xml" value="0.32916666666666666" />
+        <entry key="app/src/main/res/drawable/ic_money_focused.xml" value="0.32916666666666666" />
+        <entry key="app/src/main/res/drawable/ic_rupee.xml" value="0.32916666666666666" />
+        <entry key="app/src/main/res/drawable/label_selector.xml" value="0.32916666666666666" />
+        <entry key="app/src/main/res/drawable/rupee.xml" value="0.32916666666666666" />
+        <entry key="app/src/main/res/layout/activity_add_transaction.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/transcation_layout.xml" value="0.31302083333333336" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
