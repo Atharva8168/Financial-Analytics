@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinancialAnalytics">
         <activity
+            android:name=".DetailedActivity"
+            android:exported="true" />
+        <activity
             android:name=".AddTransactionActivity"
             android:exported="true" />
         <activity

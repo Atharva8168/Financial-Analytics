@@ -1,11 +1,13 @@
 package com.example.android.financialanalytics
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.activity_detailed.view.*
 
 class TransactionAdapter(private var transactions : List<Transaction>):RecyclerView.Adapter<TransactionAdapter.TransactionHolder>() {
 
@@ -34,6 +36,12 @@ class TransactionAdapter(private var transactions : List<Transaction>):RecyclerV
         }
 
         holder.label.text = transaction.label
+
+        holder.itemView.setOnClickListener(){
+            val intent = Intent(context, DetailedActivity::class.java)
+            intent.putExtra("transaction", transaction)
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int {
