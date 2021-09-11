@@ -14,7 +14,7 @@
         <entry key="app/src/main/res/drawable/ic_rupee.xml" value="0.32916666666666666" />
         <entry key="app/src/main/res/drawable/label_selector.xml" value="0.32916666666666666" />
         <entry key="app/src/main/res/drawable/rupee.xml" value="0.32916666666666666" />
-        <entry key="app/src/main/res/layout/activity_add_transaction.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_add_transaction.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/transcation_layout.xml" value="0.31302083333333336" />
       </map>
