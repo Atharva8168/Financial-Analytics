@@ -11,6 +11,9 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
+import com.github.mikephil.charting.data.Entry
+import com.github.mikephil.charting.data.PieData
+import com.github.mikephil.charting.data.PieDataSet
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.GlobalScope
@@ -75,7 +78,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        createExpensePieChart()
+        createIncomePieChart()
+
     }
+
     private fun fetchAll(){
         GlobalScope.launch {
             transactions = db.transactionDao().getAll()
@@ -143,6 +150,42 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+    }
+
+    private fun createIncomePieChart(){
+        val xvalues = ArrayList<String>()
+        xvalues.add("Monday")
+        xvalues.add("Tuesday")
+        xvalues.add("Wednesday")
+        xvalues.add("Thrusday")
+
+        val piechartentry = ArrayList<Entry>()
+        piechartentry.add(Entry(2.2f, 0))
+        piechartentry.add(Entry(4.5f, 2))
+        piechartentry.add(Entry(4.5f, 2))
+        piechartentry.add(Entry(6.0f, 3))
+
+        val piedataset = PieDataSet(piechartentry, "Income")
+        val data = PieData(xvalues, piedataset)
+        incomePieChart.data = data
+    }
+
+    private fun createExpensePieChart(){
+        val xvalues = ArrayList<String>()
+        xvalues.add("Monday")
+        xvalues.add("Tuesday")
+        xvalues.add("Wednesday")
+        xvalues.add("Thrusday")
+
+        val piechartentry = ArrayList<Entry>()
+        piechartentry.add(Entry(2.2f, 0))
+        piechartentry.add(Entry(4.5f, 2))
+        piechartentry.add(Entry(4.5f, 2))
+        piechartentry.add(Entry(6.0f, 3))
+
+        val piedataset = PieDataSet(piechartentry, "Income")
+        val data = PieData(xvalues, piedataset)
+        expensePieChart.data = data
     }
 
     override fun onResume() {

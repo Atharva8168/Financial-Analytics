@@ -107,6 +107,30 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
+        <LinearLayout
+            android:id="@+id/pieChartLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dashboard_card_view">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:layout_weight="1"
+                android:id="@+id/incomePieChart"
+                android:layout_width="0dp"
+                android:layout_height="200dp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:layout_weight="1"
+                android:id="@+id/expensePieChart"
+                android:layout_width="0dp"
+                android:layout_height="200dp" />
+
+        </LinearLayout>
+
+
+
+
         <TextView
             android:id="@+id/recycler_view_title"
             android:layout_width="wrap_content"
@@ -116,7 +140,7 @@
             android:textSize="14sp"
             android:textStyle="bold"
             android:layout_marginStart="10dp"
-            android:layout_below="@id/dashboard_card_view"
+            android:layout_below="@id/pieChartLayout"
             android:layout_marginTop="12dp" />
 
         <androidx.recyclerview.widget.RecyclerView
