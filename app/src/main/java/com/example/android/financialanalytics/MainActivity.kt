@@ -207,7 +207,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         val piedataset = PieDataSet(piechartentry, "Expense")
-        piedataset.color = resources.getColor(R.color.red1)
+        piedataset.color = resources.getColor(R.color.red)
         piedataset.sliceSpace = 2f
         val data = PieData(xvalues, piedataset)
         expensePieChart.data = data
