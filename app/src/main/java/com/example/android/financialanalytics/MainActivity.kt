@@ -206,7 +206,7 @@ class MainActivity : AppCompatActivity() {
             piechartentry.add(Entry(item.toFloat(),i))
         }
 
-        val piedataset = PieDataSet(piechartentry, "Income")
+        val piedataset = PieDataSet(piechartentry, "Expense")
         piedataset.color = resources.getColor(R.color.red1)
         piedataset.sliceSpace = 2f
         val data = PieData(xvalues, piedataset)
