@@ -12,6 +12,32 @@
     <color name="green">#4CAF50</color>
     <color name="red">#F44336</color>
 
+    <color name="red1">#EF5350</color>
+    <color name="red2">#F44336</color>
+    <color name="red3">#E53935</color>
+    <color name="red4">#D32F2F</color>
+    <color name="red5">#C62828</color>
+    <color name="red6">#B71C1C</color>
+    <color name="red7">#D50000</color>
+    <color name="red8">#FF1744</color>
+    <color name="red9">#FF5252</color>
+    <color name="red10">#FF8A80</color>
+
+
+    <color name="green1">#66BB6A</color>
+    <color name="green2">#4CAF50</color>
+    <color name="green3">#43A047</color>
+    <color name="green4">#388E3C</color>
+    <color name="green5">#2E7D32</color>
+    <color name="green6">#1B5E20</color>
+    <color name="green7">#00C853</color>
+    <color name="green8">#00E676</color>
+    <color name="green9">#69F0AE</color>
+    <color name="green10">#B9F6CA</color>
+
+
+
+
 
 
 </resources>
