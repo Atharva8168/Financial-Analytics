@@ -85,12 +85,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        trial_btn.setOnClickListener{
-            Toast.makeText(this,"Ho Clicked", Toast.LENGTH_LONG).show()
-            createIncomePieChart()
-            createExpensePieChart()
-        }
 
+        createIncomePieChart()
+        createExpensePieChart()
 
     }
 
@@ -143,6 +140,9 @@ class MainActivity : AppCompatActivity() {
         totalBudgetAmount.text = "₹%.2f".format(totalAmount)
         cardBudgetAmount.text = "₹%.2f".format(budgetAmount)
         cardExpenseAmount.text = "₹%.2f".format(expenseAmount)
+
+        createIncomePieChart()
+        createExpensePieChart()
 
     }
 
