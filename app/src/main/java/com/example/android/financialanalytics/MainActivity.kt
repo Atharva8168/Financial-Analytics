@@ -164,29 +164,31 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun createIncomePieChart(){
-        Toast.makeText(this,"Income Clicked", Toast.LENGTH_LONG).show()
-        val xvalues = ArrayList1<String>()
-        xvalues.add("Monday")
-        xvalues.add("Tuesday")
-        xvalues.add("Wednesday")
-        xvalues.add("Thrusday")
+        val xvalues = ArrayList<String>()
+        var bbbb  = transactions.filter {it.amount>0}.map { it.label}
+        for (i in bbbb.indices) {
+            xvalues.add(bbbb[i])
+        }
+
+        val yvalues = ArrayList1<Double>()
+        val aaaa = transactions.filter { it.amount>0 }.map { it.amount }
+        for (i in aaaa.indices){
+            yvalues.add(Math.abs(aaaa[i]))
+        }
 
         val piechartentry = ArrayList1<Entry>()
-        piechartentry.add(Entry(2.2f, 0))
-        piechartentry.add(Entry(4.5f, 2))
-        piechartentry.add(Entry(4.5f, 2))
-        piechartentry.add(Entry(6.0f, 3))
+        for ((i,item) in  yvalues.withIndex()){
+            piechartentry.add(Entry(item.toFloat(),i))
+        }
 
         val piedataset = PieDataSet(piechartentry, "Income")
-        piedataset.color = resources.getColor(R.color.green1)
+        piedataset.color = resources.getColor(R.color.green)
         piedataset.sliceSpace = 2f
         val data = PieData(xvalues, piedataset)
         incomePieChart.data = data
     }
 
     private fun createExpensePieChart(){
-        Toast.makeText(this, "Expense Clicked", Toast.LENGTH_LONG).show()
-
         val xvalues = ArrayList<String>()
         var bbbb  = transactions.filter {it.amount<0}.map { it.label}
         for (i in bbbb.indices) {
