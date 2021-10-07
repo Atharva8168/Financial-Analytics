@@ -128,19 +128,6 @@
 
         </LinearLayout>
 
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/trial_btn"
-            android:text="try"
-            android:layout_below="@id/pieChartLayout"
-            android:layout_toRightOf="@+id/recycler_view_title"
-            android:layout_marginLeft="15dp"  />
-
-
-
-
         <TextView
             android:id="@+id/recycler_view_title"
             android:layout_width="wrap_content"
