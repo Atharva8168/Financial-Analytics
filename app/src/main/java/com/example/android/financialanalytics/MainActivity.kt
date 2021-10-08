@@ -186,6 +186,7 @@ class MainActivity : AppCompatActivity() {
         piedataset.color = resources.getColor(R.color.green)
         incomePieChart.setDescription("  ")
         piedataset.sliceSpace = 2f
+        piedataset.setValueTextSize(12f)
         val data = PieData(xvalues, piedataset)
         incomePieChart.data = data
 
@@ -213,6 +214,7 @@ class MainActivity : AppCompatActivity() {
         piedataset.color = resources.getColor(R.color.red)
         expensePieChart.setDescription(" ")
         piedataset.sliceSpace = 2f
+        piedataset.setValueTextSize(12f)
         val data = PieData(xvalues, piedataset)
         expensePieChart.data = data
     }
