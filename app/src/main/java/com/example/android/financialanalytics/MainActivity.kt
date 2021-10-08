@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
+import com.github.mikephil.charting.components.Legend
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet
@@ -183,9 +184,11 @@ class MainActivity : AppCompatActivity() {
 
         val piedataset = PieDataSet(piechartentry, "Income")
         piedataset.color = resources.getColor(R.color.green)
+        incomePieChart.setDescription("  ")
         piedataset.sliceSpace = 2f
         val data = PieData(xvalues, piedataset)
         incomePieChart.data = data
+
     }
 
     private fun createExpensePieChart(){
@@ -208,6 +211,7 @@ class MainActivity : AppCompatActivity() {
 
         val piedataset = PieDataSet(piechartentry, "Expense")
         piedataset.color = resources.getColor(R.color.red)
+        expensePieChart.setDescription(" ")
         piedataset.sliceSpace = 2f
         val data = PieData(xvalues, piedataset)
         expensePieChart.data = data
