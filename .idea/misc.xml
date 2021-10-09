@@ -18,7 +18,9 @@
         <entry key="app/src/main/res/layout/activity_detailed.xml" value="0.3171875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_trial.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/nav_header.xml" value="0.31979166666666664" />
         <entry key="app/src/main/res/layout/transcation_layout.xml" value="0.31302083333333336" />
+        <entry key="app/src/main/res/menu/nav_drawer_menu.xml" value="0.31979166666666664" />
       </map>
     </option>
   </component>

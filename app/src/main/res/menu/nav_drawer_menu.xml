@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_drawer_budget_tracker_title"
+        android:title="Budget Tracker" />
+
+    <item
+        android:id="@+id/nav_drawer_crypto_news_title"
+        android:title="Crypto News" />
+
+    <item
+        android:id="@+id/nav_drawer_emi_calculator_title"
+        android:title="EMI Calculator" />
+</menu>

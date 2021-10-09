@@ -5,9 +5,11 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.Settings
+import android.view.MenuItem
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Transformations.map
 import androidx.recyclerview.widget.ItemTouchHelper
@@ -33,6 +35,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var transactionAdapter : TransactionAdapter
     private lateinit var linearLayoutManager : LinearLayoutManager
     private lateinit var db : AppDatabase
+    private lateinit var toggle: ActionBarDrawerToggle
 
 
 
@@ -40,6 +43,27 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        toggle = ActionBarDrawerToggle(this, drawer_layout, R.string.open, R.string.close)
+        drawer_layout.addDrawerListener(toggle)
+        toggle.syncState()
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        nav_view.setNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.nav_drawer_budget_tracker_title ->{
+                var intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                }
+
+
+
+                R.id.nav_drawer_crypto_news_title -> Toast.makeText(applicationContext,
+                    "News clicked", Toast.LENGTH_SHORT).show()
+                R.id.nav_drawer_emi_calculator_title -> Toast.makeText(applicationContext,
+                    "BEmi clicked", Toast.LENGTH_SHORT).show()
+            }
+            true
+        }
 
         transactions = arrayListOf()
 
@@ -222,5 +246,12 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         fetchAll()
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (toggle.onOptionsItemSelected(item)){
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
