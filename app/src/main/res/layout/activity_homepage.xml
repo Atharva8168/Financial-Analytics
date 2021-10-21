@@ -33,75 +33,102 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="START SAVINGS"
+                android:layout_marginTop="25dp"
+                android:textSize="25sp"
                 android:textStyle="bold" />
 
             <TextView
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/homepage_start_saving_para1" />
 
             <TextView
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/homepage_start_saving_para2" />
 
             <TextView
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/homepage_start_saving_para3" />
 
 
             <TextView
+                android:layout_marginTop="25dp"
+                android:textSize="25sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="IT'S CALMER"
                 android:textStyle="bold" />
 
             <TextView
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/homepage_itsclamer_para1" />
 
             <TextView
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/homepage_itsclamer_para2" />
 
             <TextView
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/homepage_itsclamer_para3" />
 
 
-            <ImageView
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:layout_gravity="center"
-                android:src="@drawable/savings" />
-
-
             <TextView
+                android:layout_marginTop="25dp"
+                android:textSize="25sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="IT'S EASY"
                 android:textStyle="bold" />
 
             <TextView
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/homepage_itseasy_para1" />
 
             <TextView
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/homepage_itseasy_para2" />
 
             <TextView
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/homepage_itseasy_para3" />
 
             <LinearLayout
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">

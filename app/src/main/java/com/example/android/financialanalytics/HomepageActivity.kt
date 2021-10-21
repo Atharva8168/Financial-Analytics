@@ -8,12 +8,14 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_homepage.*
 
 class HomepageActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_homepage)
 
         website_button.setOnClickListener{
-            val uri: Uri = Uri.parse("https://fintrackk.netlify.app/") // missing 'http://' will cause crashed
+            val uri: Uri = Uri.parse("https://fintrackk.netlify.app/")
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
@@ -22,5 +24,7 @@ class HomepageActivity : AppCompatActivity() {
             val intent = Intent(this, BudgetTrackerActivity::class.java)
             startActivity(intent)
         }
+
+
     }
 }
