@@ -19,7 +19,7 @@ import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_emi_calculate.*
-import kotlinx.android.synthetic.main.activity_main.*
+//import kotlinx.android.synthetic.main.activity_main.*
 //import kotlinx.android.synthetic.main.activity_rd.*
 import java.text.DecimalFormat
 import java.util.*
