@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.financialanalytics">
+    package="com.example.android.financialanalytics" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="FinTrack"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FinancialAnalytics">
+        android:theme="@style/Theme.FinancialAnalytics" >
+        <activity
+            android:name=".HomepageActivity"
+            android:exported="true"
+            android:label="FinTrack">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CryptoNewsActivity"
+            android:exported="true"
+            android:label="Crypto News" />
+        <activity
+            android:name=".EmiStatiscticsActivity"
+            android:exported="true"
+            android:label="Statisctics" />
+        <activity
+            android:name=".EmiCalculateActivity"
+            android:exported="true"
+            android:label="EMI Calculator" />
         <activity
             android:name=".DetailedActivity"
             android:exported="true" />
@@ -16,14 +41,10 @@
             android:name=".AddTransactionActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:name=".BudgetTrackerActivity"
+            android:exported="true"
+            android:label="Budget Tracker"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

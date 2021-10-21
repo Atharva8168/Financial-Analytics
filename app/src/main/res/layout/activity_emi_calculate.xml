@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layer_51"
+    android:orientation="vertical"
+    tools:context=".EmiCalculateActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:text="Principle Amount"
+        android:textColor="#2F3293"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        app:boxBackgroundMode="outline"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.010"
+        tools:ignore="MissingConstraints">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/principleamount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/corner_redius"
+            android:inputType="numberDecimal"
+            android:padding="2dp"
+            android:textColorHint="@color/black" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="228dp"
+        android:layout_height="29dp"
+        android:gravity="center_horizontal"
+        android:text="Interest Amount"
+        android:textAlignment="center"
+        android:textColor="#2F3293"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        app:boxBackgroundMode="outline"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.010"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fdInterest"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="2dp"
+            android:background="@drawable/corner_redius"
+            android:inputType="numberDecimal" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#2F3293"
+        android:text="Loan Tenure"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintVertical_bias="0.010" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        app:boxBackgroundMode="outline"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.010"
+        tools:ignore="MissingConstraints">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="2dp"
+            android:background="@drawable/corner_redius"
+            android:inputType="numberDecimal" />
+
+        <ToggleButton
+            android:id="@+id/toggle"
+            android:textColor="@color/white"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="174dp"
+            android:layout_marginTop="-57dp"
+            android:background="@drawable/corner_redius"
+            android:backgroundTint="#1f5156"
+            android:textOff="year"
+            android:textOn="Month" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:layout_constraintVertical_bias="0.052">
+
+        <Button
+
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginVertical="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:background="@drawable/buttonredius"
+            android:text="reset"
+
+
+            />
+
+        <Button
+            android:id="@+id/calculator"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginVertical="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonredius"
+            android:textSize="10sp"
+            android:text="calculate" />
+
+        <Button
+            android:id="@+id/statstics"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginVertical="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:background="@drawable/buttonredius"
+            android:text="Statisctics" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:background="@drawable/table_a"
+        android:id="@+id/Relativelayout1"
+        android:layout_width="385dp"
+        android:layout_height="190dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.130"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="346dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="144dp"
+            android:weightSum="2">
+
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:gravity="center_horizontal"
+                android:text="Monthly Payment"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="80dp"
+                android:gravity="center_horizontal"
+                android:text="Yearly Payment"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="345dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginRight="37dp"
+            android:layout_marginBottom="117dp"
+
+            >
+
+            <TextView
+                android:id="@+id/MonthlyPayment"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:gravity="center_horizontal"
+                android:text="0.0"
+                android:textAlignment="center"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/YearlyPayment"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="80dp"
+                android:gravity="center_horizontal"
+                android:text="0.0"
+                android:textAlignment="center"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="323dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="41dp"
+            android:layout_marginBottom="60dp"
+            android:weightSum="2">
+
+            <TextView
+
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="Total Interest Payable"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="80dp"
+                android:gravity="center_horizontal"
+                android:text="Principle+Interest "
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="333dp"
+            android:layout_height="33dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="42dp">
+
+
+            <TextView
+                android:id="@+id/PayableInterest"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:gravity="center_horizontal"
+                android:text="0.0"
+                android:textAlignment="center"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TotalWithInterest"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="80dp"
+                android:gravity="center_horizontal"
+                android:text="0.0"
+                android:textAlignment="center"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

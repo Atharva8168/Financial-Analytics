@@ -17,7 +17,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".MainActivity">
+            tools:context=".BudgetTrackerActivity">
 
             <LinearLayout
                 android:layout_marginStart="10dp"
@@ -139,13 +139,13 @@
                 android:id="@+id/recycler_view_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Transcation"
+                android:layout_below="@id/pieChartLayout"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:text="Transaction"
                 android:textAllCaps="true"
                 android:textSize="14sp"
-                android:textStyle="bold"
-                android:layout_marginStart="10dp"
-                android:layout_below="@id/pieChartLayout"
-                android:layout_marginTop="12dp" />
+                android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycle_view"

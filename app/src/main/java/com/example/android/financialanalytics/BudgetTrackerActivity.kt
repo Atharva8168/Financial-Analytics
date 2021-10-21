@@ -1,34 +1,28 @@
 package com.example.android.financialanalytics
 
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.Settings
 import android.view.MenuItem
 import android.view.View
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.content.ContextCompat
-import androidx.lifecycle.Transformations.map
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
-import com.github.mikephil.charting.components.Legend
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.transcation_layout.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import java.util.*
 import kotlin.collections.ArrayList as ArrayList1
 
-class MainActivity : AppCompatActivity() {
+class BudgetTrackerActivity : AppCompatActivity() {
     private lateinit var deletedTransaction: Transaction
     private lateinit var transactions : List<Transaction>
     private lateinit var oldTransaction : List<Transaction>
@@ -51,16 +45,19 @@ class MainActivity : AppCompatActivity() {
         nav_view.setNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.nav_drawer_budget_tracker_title ->{
-                var intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
+                    var intent = Intent(this, BudgetTrackerActivity::class.java)
+                    startActivity(intent)
                 }
 
+                R.id.nav_drawer_crypto_news_title -> {
+                    var intent = Intent(this, CryptoNewsActivity::class.java)
+                    startActivity(intent)
+                }
 
-
-                R.id.nav_drawer_crypto_news_title -> Toast.makeText(applicationContext,
-                    "News clicked", Toast.LENGTH_SHORT).show()
-                R.id.nav_drawer_emi_calculator_title -> Toast.makeText(applicationContext,
-                    "BEmi clicked", Toast.LENGTH_SHORT).show()
+                R.id.nav_drawer_emi_calculator_title -> {
+                    var intent = Intent(this, EmiCalculateActivity::class.java)
+                    startActivity(intent)
+                }
             }
             true
         }

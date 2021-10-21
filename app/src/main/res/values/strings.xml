@@ -1,8 +1,35 @@
 <resources>
-    <string name="app_name">Financial Analytics</string>
+
 
     <string name="rupee">\u20B9</string>
 
     <string name="open">Open</string>
     <string name="close">Close</string>
+
+    <string name="title_activity_statistics">StatisticsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="get_principal_amount">Enter Principle Amount</string>
+    <string name="emi_calculator">Emi Calculator</string>
+    <string name="emi_per_month">EMI (per month)</string>
+    <string name="loan_tenure">Loan Tenure (max 50 years)</string>
+    <string name="year">Enter Year</string>
+    <string name="emierror">Enter Emi per month</string>
+    <string name="RD">Recurring Deposite</string>
+    <string name="interestPayout">Interest Payout</string>
+    <string name="homepage_start_saving_para1">If your parents had any financial acumen, they’ve probably told you from a young age to start saving, and they were right (about that)! </string>
+    <string name="homepage_start_saving_para2">If you start saving ₹500 per month from the age of 15, on a savings account that gives you 3% per year of interest, by the time you’re 20 you’ll have almost ₹33K, and while that doesn’t seem like a lot, remember it only took ₹500 per month.</string>
+    <string name="homepage_start_saving_para3">If you save ₹1000 per month instead, you’ll have over ₹66K after those 5 years, and almost ₹132K after 5 more.</string>
+    <string name="homepage_itsclamer_para1">In short, so that you can have some money for more expensive items or an emergency!</string>
+    <string name="homepage_itsclamer_para2">If you want to buy a bike or a car, or even a decent laptop, it’s hard to do it (if you don’t want to take out a loan) if you have no money saved.</string>
+    <string name="homepage_itsclamer_para3">It also provides you with freedom, often overlooked. Freedom of choice. Freedom of saying “no”, and freedom of saying “yes”, instead of being forced to.</string>
+    <string name="homepage_itseasy_para1">It shouldn’t be hard to save. You don’t even really need a savings account if that’s something that makes you uncomfortable (you won’t make any interest over time, though)!</string>
+    <string name="homepage_itseasy_para2">You can simply have a separate bank account (even in the same bank), as long as you’re not paying unnecessary fees, so you can have your “main” account be basically your remaining budget; your “available” money.</string>
+    <string name="homepage_itseasy_para3">So please start saving, it\'s good for you!</string>
 </resources>

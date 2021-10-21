@@ -5,11 +5,12 @@
         android:id="@+id/nav_drawer_budget_tracker_title"
         android:title="Budget Tracker" />
 
-    <item
-        android:id="@+id/nav_drawer_crypto_news_title"
-        android:title="Crypto News" />
 
     <item
         android:id="@+id/nav_drawer_emi_calculator_title"
         android:title="EMI Calculator" />
+
+    <item
+        android:id="@+id/nav_drawer_crypto_news_title"
+        android:title="Crypto News" />
 </menu>

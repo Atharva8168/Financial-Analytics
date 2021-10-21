@@ -2,6 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="150dp"
-    android:background="@color/purple_500">
+    android:background="#e5e5e5">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/header_img"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
